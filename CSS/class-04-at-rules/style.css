@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url("../class-02-box-model/style.css");
+
+@font-face {
+    font-family: myFontSimpsom;
+    src: url(fonts/Homer_Simpson_Revised.ttf);
+}
+
+@font-face {
+    font-family: playstation2;
+    src: url("fonts/zrnic\ rg.ttf");
+}
+
+article {
+    display: flex;
+    gap: 72px;
+
+    animation-name: myAnimation;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out;
+
+}
+
+h2 {
+    animation-name: myAnimationRotate;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+    display: inline-block;
+}
+
+h3 {
+    font-family: myFontSimpsom;
+    font-size: 32px;
+}
+
+h3.playstation {
+  font-family: playstation2;  
+}
+
+@media (max-width: 500px) {
+    article {
+        display: block;
+    }
+
+    h2 {
+        margin-top: 16px;        
+    }
+
+    p {
+        margin-top: 8px;
+    }
+
+    div.square1 {
+        position: static;
+    }
+}
+
+@keyframes myAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes myAnimationRotate {
+    to {
+        transform: rotateZ(0deg);
+    }
+
+    from {
+        transform: rotateZ(360deg);
+    }
+}

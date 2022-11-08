@@ -1,0 +1,61 @@
+* {
+    /* Reset com seletor universal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 32px;
+}
+
+main {
+    height: 80vh;
+    /* width: 40vw; */
+    border: solid 2px black;
+    padding: 32px;
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* gap: 32px; */
+
+    position: relative;
+}
+
+div {
+    height: 160px;
+    width: 160px;
+    
+    color: white;
+    font-size: 64px;
+    
+    padding: 16px;
+    /* margin: 16px; */
+    border: solid 1px black;
+    
+    /* display: inline-block;     */
+}
+
+.square1 {
+    background: red;
+    position: absolute;
+    z-index: -2;
+}
+
+.square2 {
+    background: green;
+    position: absolute;
+    left: 68px;
+    top: 68px;
+    z-index: -1;
+}
+
+.square3 {
+    position: absolute;
+    background: blue;
+    left: 108px;
+    top: 108px;
+    z-index: -3;
+}

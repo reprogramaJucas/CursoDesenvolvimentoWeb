@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas: 
+        "A A" 
+        "B C"
+        ". C"
+        ". C" 
+        "D D";
+    
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10% 40% 20% 20% 10%;
+
+    padding: 16px;
+
+    gap: 16px;
+    
+    justify-content: center;
+    align-content: center;
+    
+    justify-items: center;
+    align-items: center;
+    
+}
+
+header {
+    background: lightgreen;
+    grid-area: A;
+    border: 1px solid;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    background: lightsalmon;
+
+    grid-area: B;
+
+}
+
+aside {
+    background: lightseagreen;
+
+    grid-area: C;
+}
+
+footer {
+    background: lightgrey;
+    
+    grid-area: D;
+}
