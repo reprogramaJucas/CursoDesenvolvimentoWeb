@@ -1,15 +1,11 @@
-let economizarDinheiro = true
-let juntarDinheiro = false
- 
-// console.log(economizarDinheiro && juntarDinheiro) 
- 
+// console.log((7 + 8) / 2)
+// console.log(3 > 2 && 4 < 5)
+// console.log(3 > 2 || 4 < 5)
+// console.log(3 > 2 > 1)
+// console.log(true == 1)
+// console.log(3 > 2 && 2 > 1)
+// console.log(true && true)
 
- let guardarSelic = true
- let pegarEmprestimo = false
- 
-//  console.log(guardarSelic || pegarEmprestimo) 
-
-  console.log(!guardarSelic)
-
-
+console.log(true == 1)
+console.log(true === 1)
 
